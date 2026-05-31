@@ -62,6 +62,6 @@ class SubscriptionsServiceProvider extends ServiceProvider
         $this->publishConfigFrom(__DIR__.'/../../config/config.php','rinvex/subscriptions');
         $this->publishMigrationsFrom(__DIR__.'/../../database/migrations', 'rinvex/subscriptions');
         
-        ! $this->app['config']['rinvex.subscriptions.autoload_migrations'] || $this->loadMigraationsFrom(__DIR__.'/../../database/migrations');
+        //! $this->app['config']['rinvex.subscriptions.autoload_migrations'] || $this->loadMigraationsFrom(__DIR__.'/../../database/migrations');
     }
 }
